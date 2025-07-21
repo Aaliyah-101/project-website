@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Project Title</title>
+  <title>DocPlan</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
@@ -15,8 +15,8 @@
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
   <style>
-    .menu-index {
-      color: rgb(255, 255, 255) !important;
+    .menu-empty {
+      color: rgb(154, 250, 237) !important;
       opacity: 1 !important;
       font-weight: 700 !important;
     }
@@ -28,17 +28,46 @@
   <div class="content-container">
     <div class="content">
       <div class="content-table flex-column">
+         <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2>About Us</h2>
+            <p class="text">
+              DocPlan was created by the students-led programme at Makerere University.<br>
+              It is a modern healthcare mobile app solution that connects patients and doctors instantly.<br>
+              Modified and updated by the IT Department, under D&D Medical hub.<br>
+              Registered under the Uganda Medical Association.
+            </p>
+</div>
+</div>
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi.
-            </p>
-            <h2>Heading 1</h2>
+            <h2>We are optimistic about ur feedback!</h2>
             <hr>
             <p class="text">
-              Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet.
+              Telling us about your experience helps us know how to make DocPlan better and more efficient to meet users' requirements.
             </p>
+            <div class="flex-row">
+              <div class="flex-item flex-column">
+                <p class="text">
+                  Please check the box depending on your opinion about the app.
+                </p>
+                <div class="custom-survey add-top-margin add-bottom-margin" style="height: 300px; width: 600px;">
+                  <span class="text">Has the app been helpful?</span>
+                  <div class="custom-radio-group-survey add-top-margin">
+                    <div><input type="radio" name="scenario-question-sq-1508-scale" value="2596" id="scenario-question-sq-1508-item-0"> <label class="break-long-url" for="scenario-question-sq-1508-item-0">Strongly Agree</label></div>
+                    <div><input type="radio" name="scenario-question-sq-1508-scale" value="2597" id="scenario-question-sq-1508-item-1"> <label class="break-long-url" for="scenario-question-sq-1508-item-1">Agree</label></div>
+                    <div><input type="radio" name="scenario-question-sq-1508-scale" value="2598" id="scenario-question-sq-1508-item-2"> <label class="break-long-url" for="scenario-question-sq-1508-item-2">Neutral</label></div>
+                    <div><input type="radio" name="scenario-question-sq-1508-scale" value="2599" id="scenario-question-sq-1508-item-3"> <label class="break-long-url" for="scenario-question-sq-1508-item-3">Disagree</label></div>
+                    <div><input type="radio" name="scenario-question-sq-1508-scale" value="2600" id="scenario-question-sq-1508-item-4"> <label class="break-long-url" for="scenario-question-sq-1508-item-4">Strongly Disagree</label></div>
+                  </div>
+                </div>
+                <div class="custom-survey add-top-margin add-bottom-margin" style="height: 250px; width: 700px;">
+                  <span class="text">Do you have any comments?</span>
+                  <textarea class="custom-textbox-survey add-top-margin" placeholder="(max 500 characters)" maxlength="500" style="height: 200px; width: 690px;"></textarea>
+                  <div class="control-group">
+                  <button class="custom-button-flat pulse-info"><img src="img/submit.png"><span>Submit</span></button>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
