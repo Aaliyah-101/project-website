@@ -65,7 +65,7 @@
                   <span class="text">Do you have any comments?</span>
                   <textarea class="custom-textbox-survey add-top-margin" placeholder="(max 500 characters)" maxlength="500" style="height: 200px; width: 690px;"></textarea>
                   <div class="control-group">
-                  <button class="custom-button-flat pulse-info"><img src="img/submit.png"><span>Submit</span></button>
+                  <button id="submit-button" class="custom-button-flat pulse-info"><img src="img/submit.png"><span>Submit</span></button>
                   </div>
                 </div>
           </div>
@@ -74,6 +74,26 @@
     </div>
   </div>
   <div class="footer-container"></div>
+  <script>
+$(function() {
+  $("#submit-button").on("click", function (e) {
+    e.preventDefault();
+    var $span = $(this).find("span");
+    var originalText = $span.text();
+    $span.text("Submitted!");
+
+    // Reset radio buttons
+    $("input[type=radio][name='scenario-question-sq-1508-scale']").prop("checked", false);
+
+    // Reset textarea
+    $(".custom-textbox-survey").val("");
+
+    setTimeout(function () {
+      $span.text(originalText);
+    }, 3000);
+  });
+});
+</script>
 </body>
 
 </html>
