@@ -323,7 +323,8 @@ hr {
 .banner p,
 .banner span {
   color: white;
-  fontsize: 20px;
+  fontsize: 25px;
+  align-items: centre;
 }
 
 .banner .flex-item {
