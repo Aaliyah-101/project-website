@@ -46,38 +46,62 @@
             </div>
             <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2><b>How It Works</b></h2>
+            <h2><b>How Easy It Is To Use</b></h2>
             <hr>
-            <p class="text"><b>Step 1:</b><br>Doctors set up their availability in DocPlan.
-            </p>
-            <div class="flex-row">
-              <div class="flex-item flex-item-stretch flex-column">
-                <video style="width: 300px; height: 200px;" preload controls autoplay loop muted playsinline class="image">
-                  <source src="vid\5390523-coll-wavebreak-doctor-3840x2160_EEp8G93u.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
+            <div class="timeline">
+              <!-- Timeline Item 1 (image left, text right) -->
+              <div class="timeline-item">
+                <div class="timeline-content image-left">
+                  <div class="timeline-img">
+                    <img src="img/doctor.png" alt="Doctor">
+                  </div>
+                  <div class="timeline-text">
+                    <h3>Step 1</h3>
+                    <p>Doctor sets availability.</p>
+                  </div>
+                </div>
+                <div class="timeline-arrow arrow-right"></div>
+              </div>
+            
+              <!-- Timeline Item 2 (image right, text left) -->
+              <div class="timeline-item">
+                <div class="timeline-content image-right">
+                  <div class="timeline-text">
+                    <h3>Step 2</h3>
+                    <p>Patient books a slot depending on the doctors availability.</p>
+                  </div>
+                  <div class="timeline-img">
+                    <img src="img/Patient.png" alt="Patient">
+                  </div>
+                  <div class="item-arrow">
+                    <span class="circle"></span>
+                    <span class="arrow-down"></span>
+                    <span class="line-horizontal"></span>
+                    <span class="line-down"></span>
+                  </div>
+                </div>
+                <div class="timeline-arrow arrow-left"></div>
+              </div>
+              <!-- Repeat for more items -->
+              <div class="timeline-item">
+                <div class="timeline-content image-left">
+                  <div class="timeline-img">
+                    <img src="img/patient-doctor.png" alt="Doctor">
+                  </div>
+                  <div class="timeline-text">
+                    <h3>Step 3</h3>
+                    <p>Both parties receive notifications.</p>
+                  </div>
+                </div>
+                <div class="timeline-arrow arrow-right"></div>
               </div>
             </div>
-            <p class="text"><b>Step 2:</b><br>Patients book appointments based on available slots of the specific doctors.</p>
-            <div class="flex-row">
-            <div class="flex-item flex-item-stretch flex-column">
-              <video style="width: 300px; height: 200px;" preload controls autoplay loop muted playsinline class="image">
-                <source src="vid\5432267_Coll_wavebreak_People_3840x2160.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
             </div>
             </div>
            
             <p class="text"><b>Step 3:</b><br>Both parties receive notifications and mange appointments through the app.
             </p>
-            <div class="flex-row">
-            <div class="flex-item flex-item-stretch flex-column">
-              <video style="width: 300px; height: 200px;" preload controls autoplay loop muted playsinline class="image">
-                <source src="vid\6015068-people-person-3840x2160_W7tfTays.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            </div>
+           
             </div>
             <p class="text"><b>Note:<br>It is to be noted that in case of emergency declaration, all other pending appointments become frozen until it is handled</b>
             </p>
@@ -92,6 +116,7 @@
             </p>
           </div>
         </div>
+        <!--i need to make an animation of arrows showing the work flow-->
          <div class="gallery add-top-margin-small add-bottom-margin-small">
           <a href="javascript:void(0)" class="flex-column"><img src="img\SignUp_screen.png">
             <div>Signup/Login</div>
@@ -123,7 +148,7 @@
         <div class="flex-row">
           <div class="flex-item flex-item-stretch flex-column">
             <p class="text text-small text-italic add-top-margin-large">
-              Credits: <span class="highlight-text">dictsdocplan</span>: support team /
+              Credits: <span class="highlight-text">Organization</span>: dictsdocplan / IT department
             </p>
           </div>
         </div>
@@ -132,7 +157,16 @@
       </div>
     </div>
     <div class="footer-container"></div>
+    <div id="custom-tab"></div>
   </div>
 </body>
 
 </html>
+<!-- <div class="flex-row">
+            <div class="flex-item flex-item-stretch flex-column">
+              <video style="width: 300px; height: 200px;" preload controls autoplay loop muted playsinline class="image">
+                <source src="vid\6015068-people-person-3840x2160_W7tfTays.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>-->
