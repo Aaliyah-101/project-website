@@ -1596,3 +1596,28 @@ ol.nested>li:before {
     max-width: 100%;
   }
 }
+@media (max-width: 750px) {
+ h2, h3 {
+    font-size: 1.2em !important;
+  }
+  .banner h2 {
+    font-size: 1.1em !important;
+  }
+  .content-table {
+    font-size: 1em !important;
+  }
+
+  .flex-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .flex-item, .flex-item-stretch {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .content-table, .banner {
+    padding: 10px !important;
+  }
+}
+
+
