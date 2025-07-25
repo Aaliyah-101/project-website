@@ -117,6 +117,24 @@ Our aim is to make healthcare faster, more efficient and more accessible by empo
         </div>
 
             <div class="footer-container"></div>
+          <script>
+              const bannerImages = [
+                'img/copy-space-doctor-office.jpg',
+                'img/young-handsome-physician-medical-robe-with-stethoscope.jpg',
+                'img/creative-collage-telehealth-consultation.jpg',
+                'img/medium-shot-doctor-holding-smartphone.jpg'
+                //add more images if needed
+              ];
+              let currentBanner = 0;
+              const bannerDiv = document.getElementById('main-banner');
+              
+              setInterval(() => {
+                currentBanner = (currentBanner + 1) % bannerImages.length;
+                bannerDiv.style.backgroundImage = `url('${bannerImages[currentBanner]}')`;
+                bannerDiv.style.backgroundSize = 'cover';
+                bannerDiv.style.backgroundPosition = 'center';
+              }, 4000); // Change image every 4 seconds
+              </script>
 </body>
 
 </html>
