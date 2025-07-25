@@ -9,4 +9,14 @@
   $(function () {
     $(".menu-container").load("menu.html");
   });
+
+  $(function() {
+    $('#menu-toggle').on('click', function(e) {
+      e.preventDefault();
+      $('#menu-items').toggleClass('open');
+    });
+    $('#menu-items a').on('click', function() {
+      $('#menu-items').removeClass('open');
+    });
+  });
 })();
