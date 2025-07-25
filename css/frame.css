@@ -1619,5 +1619,11 @@ ol.nested>li:before {
     padding: 10px !important;
   }
 }
+.image {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}
 
 
